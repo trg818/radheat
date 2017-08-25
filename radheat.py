@@ -5,15 +5,16 @@
 # radheat.ipynb and was slightly edited (reformatted) by hand.
 
 # # radheat - Calculation of radioactive heat production of $^{26}$Al, $^{40}$K, $^{60}$Fe, $^{232}$Th, $^{235}$U, and $^{238}$U
-# ### Thomas Ruedas (t dot ruedas at uni-muenster dot de) - radheat v. 1.0b, 15/08/2017
+# ### Thomas Ruedas (t dot ruedas at uni-muenster dot de) - radheat v. 1.0c, 25/08/2017
 # #### Version history
+# - 1.0c (25/08/2017) - Updated publication info (no change to the code; pre-publication).
 # - 1.0b (15/08/2017) - Update concerning importance of $^{60}$Fe (no change to the code; pre-publication).
 # - 1.0a (19/07/2017) - First public release (pre-publication).
 #
 # #### Citation info
 # If you use this program for your work, please acknowledge it and cite the following paper:
 # 
-# Ruedas, T. (2017): Radioactive heat production of six geologically important nuclides. *Geochem. Geophys. Geosys.*, submitted.
+# Ruedas, T. (2017): Radioactive heat production of six geologically important nuclides. *Geochem. Geophys. Geosys.*, doi:10.1002/2017GC006997.
 #
 # This software is released under the GNU General Public License v.3.
 # 
