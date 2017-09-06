@@ -5,12 +5,7 @@
 # radheat.ipynb and was slightly edited (reformatted) by hand.
 
 # # radheat - Calculation of radioactive heat production of $^{26}$Al, $^{40}$K, $^{60}$Fe, $^{232}$Th, $^{235}$U, and $^{238}$U
-# ### Thomas Ruedas (t dot ruedas at uni-muenster dot de) - radheat v. 1.0c, 25/08/2017
-# #### Version history
-# - 1.0c (25/08/2017) - Updated publication info (no change to the code; pre-publication).
-# - 1.0b (15/08/2017) - Update concerning importance of $^{60}$Fe (no change to the code; pre-publication).
-# - 1.0a (19/07/2017) - First public release (pre-publication).
-#
+# ### Thomas Ruedas (t dot ruedas at uni-muenster dot de) - radheat v. 1.0d, 06/09/2017
 # #### Citation info
 # If you use this program for your work, please acknowledge it and cite the following paper:
 # 
@@ -255,7 +250,7 @@ def calc_Al26(Xiso):
     print ("  lambda=%.4e 1/yr\tX_b=%.6f\n"
                "  Q_gs=%.3f keV (%.3e J)\n" \
                "  E_H (per atom)=%.3f keV (%.3e J)") % \
-               (lambda_e,fr_b,Qgs,1e3*Qgs*ec0,EH,1e3*EHe*ec0)
+               (lambda_e,fr_b,Qgs,1e3*Qgs*ec0,EH,1e3*EH*ec0)
     print "  H(Al-26)=%.6e W/kg\tH(Al)=%.6e W/kg" % (He,He_Altot)
     if Xiso != Xiso_def: print ("  Mean u_Al used with Xiso=%.3e: %.7f amu") % (Xiso,ubar)
 
@@ -945,6 +940,12 @@ elif nuc == "U-238":
 else:
     print "Unknown nuclide."
 
+# #### Version history
+# - 1.0d (06/09/2017) - Corrected $E_H$ output for $^{26}$Al in J; the values of $E_H$ in keV and of $H$ are unaffected.
+# - 1.0c (25/08/2017) - Updated publication info (no change to the code; pre-publication).
+# - 1.0b (15/08/2017) - Update concerning importance of $^{60}$Fe (no change to the code; pre-publication).
+# - 1.0a (19/07/2017) - First public release (pre-publication).
+#
 
 # ### References
 # Abusaleem, K. (2014): Nuclear data sheets for $A=228$. *Nucl. Data Sheets 116*, 163-262, [doi:10.1016/j.nds.2014.01.002](http://dx.doi.org/10.1016/j.nds.2014.01.002).
